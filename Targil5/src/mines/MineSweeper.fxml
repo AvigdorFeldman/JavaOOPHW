@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?xml-model href="MineSweeper.fxml"?>
+
+<GridPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mines.MinesController">
+    <HBox spacing="10">
+        <!-- Settings Panel -->
+        <VBox alignment="CENTER" spacing="10">
+            <HBox alignment="CENTER">
+                <Label text="width:" />
+                <TextField fx:id="colsField" prefWidth="50" text="10" />
+            </HBox>
+            <HBox alignment="CENTER">
+                <Label text="height:" />
+                <TextField fx:id="rowsField" prefWidth="50" text="10" />
+            </HBox>
+            <HBox alignment="CENTER">
+                <Label text="mines:" />
+                <TextField fx:id="minesField" prefWidth="50" text="10" />
+            </HBox>
+            <Button alignment="CENTER" onAction="#applySettings" text="Reset" VBox.vgrow="NEVER" />
+            <!-- Status Label -->
+            <Label fx:id="label" text="" />
+        </VBox>
+
+        <!-- Board -->
+        <GridPane fx:id="grid" alignment="CENTER_LEFT" />
+    </HBox>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
