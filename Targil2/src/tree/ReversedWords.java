@@ -17,6 +17,7 @@ public class ReversedWords {
 		return revStr;
 	}
 
+	
 	public static int checkReversed() {
 		// The static method counts how many strings appear reversed in the input, each
 		// string will be put in the Node tree using class Node
